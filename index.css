@@ -201,6 +201,15 @@ body {
   }
 }
 
+@media (min-width: 1600px) {
+  .container-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 43%;
+  }
+}
+
 /*THEME LIGHT*/
 
 body.light {
