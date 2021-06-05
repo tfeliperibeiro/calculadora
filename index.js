@@ -3,6 +3,7 @@ const textScreen = document.querySelector("#text-screen");
 const buttonReset = document.querySelector("#resete");
 const buttonResult = document.querySelector("#result");
 const buttonDel = document.querySelector("#del");
+const checkbox = document.querySelector('#checkbox');
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -31,3 +32,7 @@ buttonResult.addEventListener("click", () => {
     textScreen.innerHTML = eval(result);
   }
 });
+
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('light');
+})

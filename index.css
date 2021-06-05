@@ -6,6 +6,7 @@ body {
   background-color: hsl(222, 26%, 31%);
   font-family: "Spartan", sans-serif;
   overflow: hidden;
+  transition: 0.2s linear;
 }
 
 .container {
@@ -198,4 +199,45 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+}
+
+/*THEME LIGHT*/
+
+body.light {
+  background-color: hsl(0, 0%, 90%);
+}
+
+body.light h1,
+body.light p {
+  color: hsl(60, 10%, 19%);
+}
+
+body.light #del,
+body.light #resete {
+  background-color: hsl(185, 42%, 37%);
+  border-bottom: 3px solid hsl(185, 58%, 25%);
+}
+
+body.light #del:hover,
+body.light #resete:hover {
+  background-color: hsl(185, 58%, 25%);
+  border-bottom: 3px solid hsl(185, 42%, 37%);
+}
+
+body.light #result {
+  background-color: hsl(25, 98%, 40%);
+  border-bottom: 3px solid hsl(25, 99%, 27%);
+}
+
+body.light #result:hover {
+  background-color: hsl(25, 99%, 27%);
+  border-bottom: 3px solid hsl(25, 98%, 40%);
+}
+
+body.light .container-screen {
+  background-color: hsl(0, 5%, 81%);
+}
+
+body.light .container-numbers {
+  background-color: hsl(35, 11%, 61%);
 }
