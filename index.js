@@ -10,7 +10,7 @@ buttons.forEach((button) => {
     if (!button.id) {
       textScreen.innerHTML += button.innerText;
     }
-    if (textScreen.innerHTML.length === 14) {
+    if (textScreen.innerHTML.length === 12) {
       alert("Limite de números excedidos!");
       textScreen.innerHTML = "";
     }

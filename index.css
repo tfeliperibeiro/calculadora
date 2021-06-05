@@ -13,6 +13,7 @@ body {
   height: 100vh;
   width: 30%;
   margin: auto;
+  margin-top: 30px;
 }
 
 .header {
@@ -39,6 +40,7 @@ body {
 .container-screen {
   height: 90px;
   margin: auto;
+  margin-top: 30px;
   background-color: hsl(224, 36%, 15%);
   border-radius: 8px;
   display: flex;
@@ -161,10 +163,8 @@ body {
   transform: translateX(24px);
 }
 
-.dark-mode {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+img {
+  width: 30px;
 }
 
 .footer {
@@ -249,4 +249,10 @@ body.light .container-screen {
 
 body.light .container-numbers {
   background-color: hsl(35, 11%, 61%);
+}
+
+.light-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
