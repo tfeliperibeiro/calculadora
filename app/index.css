@@ -1,0 +1,143 @@
+body {
+  background-color: hsl(222, 26%, 31%);
+  font-family: "Spartan", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 30%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(30, 25%, 89%);
+}
+
+.header p {
+  font-size: 12px;
+}
+
+.theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme p {
+  margin-right: 10px;
+}
+
+.container-screen {
+  height: 90px;
+  margin: auto;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.screen {
+  position: absolute;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+.screen h1 {
+  background-color: transparent;
+  font-size: 32px;
+  color: hsl(0, 0%, 90%);
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-numbers {
+  margin-top: 20px;
+  background-color: hsl(223, 31%, 20%);
+  padding: 15px;
+  height: 50%;
+  border-radius: 8px;
+}
+
+#del,
+#resete {
+  background-color: hsl(225, 21%, 49%);
+  border-bottom: 3px solid hsl(224, 28%, 35%);
+  color: hsl(0, 0%, 90%);
+  font-size: 14px;
+}
+
+#del:hover,
+#resete:hover {
+  background-color: hsl(224, 28%, 35%);
+  border-bottom: 3px solid hsl(225, 21%, 49%);
+}
+
+#result {
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 90%);
+  border-bottom: 3px solid hsl(6, 70%, 34%);
+}
+
+#result:hover {
+  background-color: hsl(6, 70%, 34%);
+  border-bottom: 3px solid hsl(6, 63%, 50%);
+}
+
+.numbers button {
+  width: 100px;
+  height: 50px;
+  margin: 6px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  border: none;
+  border-bottom: 3px solid hsl(28, 16%, 65%);
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Spartan", sans-serif;
+}
+
+.numbers button:hover {
+  background-color: hsl(221, 14%, 31%);
+  color: hsl(0, 0%, 90%);
+}
+
+.numbers-end button {
+  width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 823px) {
+  .container {
+    width: 95%;
+  }
+
+  .container-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+
+  .container-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
